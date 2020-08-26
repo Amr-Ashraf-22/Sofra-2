@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_25sdp"
+        android:layout_margin="@dimen/_30sdp"
+        app:cardBackgroundColor="@color/light_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:textColor="@color/item_custom_restaurant_item_tv_price"
+                android:text="@string/item_custom_add_restaurant_review_tv_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_custom_add_restaurant_review_img_v_1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_sad_icon"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_custom_add_restaurant_review_img_v_2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_sad_icon"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_custom_add_restaurant_review_img_v_3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_sad_icon"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_custom_add_restaurant_review_img_v_4"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_sad_icon"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_custom_add_restaurant_review_img_v_5"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_sad_icon"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_15sdp">
+
+                <EditText
+                    android:id="@+id/item_custom_add_restaurant_review_et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:background="@null"
+                    android:hint="@string/item_custom_add_restaurant_review_et_comment" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/item_custom_add_restaurant_review_btn_add"
+                android:layout_height="wrap_content"
+                style="@style/activity_splash_btn"
+                android:layout_gravity="center"
+                android:text="@string/item_custom_add_restaurant_review_btn_add" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

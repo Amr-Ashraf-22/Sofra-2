@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Base application theme. DarkActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--    parent="Theme.AppCompat.Light.DarkActionBar"     -->
+
+
+
+    <!--    //////////////////////////////////////////////////////////////////////////     -->
+
+    <!--    General     -->
+    <!--    General     -->
+    <!--    General     -->
+
+    <!--    activity_splash     -->
+    <style name="activity_splash_btn">
+        <item name="android:layout_width">@dimen/_150sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_button_rounded_pink</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!--    general_edit_text     -->
+    <style name="general_et_user">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:paddingStart">@dimen/_22sdp</item>
+        <item name="android:paddingEnd">@dimen/_2sdp</item>
+    </style>
+
+    <!--    general_edit_text(RelativeLayout)     -->
+    <style name="general_et_user_rl">
+        <item name="android:layout_marginStart">@dimen/_30sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_30sdp</item>
+    </style>
+    <style name="general_img_v_user_rl">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--    general_button(LinearLayout)     -->
+    <style name="general_btn_user_ll">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:background">@drawable/shape_button_rounded_pink</item>
+    </style>
+    <style name="general_img_v_user_ll">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginEnd">@dimen/_3sdp</item>
+    </style>
+    <style name="general_tv_user_ll">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:layout_marginStart">@dimen/_5sdp</item>
+    </style>
+
+    <!--    general_edit_text(Rounded White)     -->
+    <style name="general_et_user_white">
+        <item name="android:textColor">@color/fragment_forgot_password_et_hint</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:background">@drawable/shape_edit_text_rounded_white</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginStart">@dimen/_30sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_30sdp</item>
+    </style>
+
+    <!--    general_Image_view(Spinner Arrow)     -->
+    <style name="general_img_v_arrow">
+        <item name="android:layout_width">@dimen/_12sdp</item>
+        <item name="android:layout_height">@dimen/_12sdp</item>
+        <item name="android:src">@drawable/ic_down_arrow_white_icon</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>
+    </style>
+
+    <!--    general_Image_view(Spinner Arrow)     -->
+    <style name="general_sp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">start|bottom</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="android:background">@null</item>
+        <item name="android:popupBackground">@color/spinner_bg</item>
+    </style>
+    <!--    general_toolbar     -->
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimaryDark</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:theme">?attr/actionBarTheme</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+    <!--    general_toolbar_items     -->
+    <style name="toolbar_item">
+        <item name="android:layout_width">@dimen/_25sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:elevation">@dimen/_10sdp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="custom_rating_bar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_custom_rating_bar</item>
+        <item name="android:minHeight">@dimen/_5sdp</item>
+        <item name="android:maxHeight">@dimen/_15sdp</item>
+
+        <item name="android:scaleX">1</item>
+        <item name="android:scaleY">1</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:transformPivotY">0dp</item>
+        <item name="android:transformPivotX">0dp</item>
+        <item name="android:numStars">4</item>
+        <item name="android:max">4</item>
+    </style>
+
+
+    <style name="disable_caps" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--    //////////////////////////////////////////////////////////////////////////     -->
+
+</resources>

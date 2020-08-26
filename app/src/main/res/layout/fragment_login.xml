@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_user_bg">
+
+        <TextView
+            android:id="@+id/fragment_login_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_tv_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            android:layout_marginTop="@dimen/_50sdp" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_login_rl_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_login_tv_title"
+            android:layout_marginTop="@dimen/_30sdp"
+            style="@style/general_et_user_rl">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_email_icon"
+                style="@style/general_img_v_user_rl" />
+
+            <EditText
+                android:id="@+id/fragment_login_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/login_et_email"
+                style="@style/general_et_user" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_login_rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_login_rl_email"
+            android:layout_marginTop="@dimen/_40sdp"
+            style="@style/general_et_user_rl">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_password_icon"
+                style="@style/general_img_v_user_rl" />
+
+            <EditText
+                android:id="@+id/fragment_login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/login_et_password"
+                style="@style/general_et_user" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/fragment_login_btn_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/login_btn1_forgot_password"
+            android:layout_below="@+id/fragment_login_rl_password"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/fragment_login_btn_login"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/fragment_login_btn_forgot_password"
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/general_btn_user_ll">
+
+            <ImageView
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:src="@drawable/ic_login_icon"
+                style="@style/general_img_v_user_ll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_btn2_login"
+                style="@style/general_tv_user_ll" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_login_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/fragment_login_ll_register"
+            android:alpha="0.8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_btn3_register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_btn3_register_here"
+                android:textColor="@color/fragment_login_tv_here"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

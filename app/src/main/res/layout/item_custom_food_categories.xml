@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/item_custom_food_categories_rl_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_6sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_custom_food_categories_img_v_category"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/item_custom_food_categories_tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_8ssp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/fragment_forgot_password_et_hint"
+            android:layout_below="@+id/item_custom_food_categories_img_v_category" />
+
+    </RelativeLayout>
+</layout>

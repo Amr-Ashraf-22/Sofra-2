@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#F5F5F5</color> <!-- 3700B3 -->
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--    General     -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F8F8F8</color>
+    <color name="pink">#FF4057</color>
+    <color name="spinner_bg">#E6B2BA</color>
+
+    <!--    fragment_login   -->
+    <color name="fragment_login_ll_register">#D5CDCB</color>
+    <color name="fragment_login_tv_here">#FC3852</color>
+
+    <!--    fragment_forgot_password   -->
+    <color name="fragment_forgot_password_et_hint">#B5B5B5</color>
+
+    <!--    item_custom_restaurant_item     483C52-->
+    <color name="item_custom_restaurant_item_tv_price">#352347</color>
+
+
+
+
+</resources>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_user_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_name_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="@string/register_restaurant_et_name"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_email_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/login_et_email"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_clock_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_delivery_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/register_restaurant_et_delivery"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_region_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/general_et_user"
+                    android:enabled="false" />
+
+                <Spinner
+                    android:id="@+id/fragment_register_restaurant_sp_city"
+                    style="@style/general_sp" />
+
+                <ImageView style="@style/general_img_v_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl"
+                android:visibility="gone"
+                android:id="@+id/fragment_register_restaurant_rl_regions"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_region_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/general_et_user"
+                    android:enabled="false" />
+
+                <Spinner
+                    android:id="@+id/fragment_register_restaurant_sp_district"
+                    style="@style/general_sp"
+                    />
+
+                <ImageView style="@style/general_img_v_arrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_password_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/login_et_password"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_password_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/register_client_et_confirm_password"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_flag_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_minimum_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/register_restaurant_et_minimum_order"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_flag_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_delivery_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/register_restaurant_et_delivery_fee"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_restaurant_tv_contact_information"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_phone_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="@string/register_client_et_phone"
+                    android:maxLength="11"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_whats_app_icon"
+                    style="@style/general_img_v_user_rl" />
+
+                <EditText
+                    android:id="@+id/fragment_register_restaurant_et_whats_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="@string/register_restaurant_et_whats_app"
+                    android:maxLength="11"
+                    style="@style/general_et_user" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_restaurant_tv_store_photo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/general_et_user_rl" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fragment_register_restaurant_cv_logo"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="start"
+                app:cardCornerRadius="@dimen/_15sdp"
+                android:background="@color/white"
+                style="@style/general_et_user_rl"
+                >
+
+                <ImageView
+                    android:id="@+id/fragment_register_restaurant_img_v_logo"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_store_icon"
+                     />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/fragment_register_restaurant_btn_register"
+                style="@style/general_btn_user_ll"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_30sdp">
+
+                <ImageView
+                    style="@style/general_img_v_user_ll"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:src="@drawable/ic_login_icon" />
+
+                <TextView
+                    style="@style/general_tv_user_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_client_btn_register" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

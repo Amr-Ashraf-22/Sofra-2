@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/fragment_restaurant_reviews_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/fragment_comments_rating_tv_text"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+        <Button
+            android:id="@+id/fragment_restaurant_reviews_btn_add"
+            android:layout_height="@dimen/_30sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            style="@style/activity_splash_btn"
+            android:text="@string/fragment_comments_rating_btn_add"
+            android:layout_below="@+id/fragment_restaurant_reviews_tv_text" />
+
+        <View
+            android:id="@+id/fragment_restaurant_reviews_view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_below="@+id/fragment_restaurant_reviews_btn_add"
+            android:background="@color/fragment_login_ll_register" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_restaurant_reviews_rv_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/fragment_restaurant_reviews_view_line"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            />
+
+    </RelativeLayout>
+</layout>

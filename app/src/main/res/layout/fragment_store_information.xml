@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/fragment_store_information_tv_status"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+            <TextView
+                android:id="@+id/fragment_store_information_tv_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/fragment_login_ll_register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/fragment_store_information_tv_city"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+            <TextView
+                android:id="@+id/fragment_store_information_tv_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/fragment_login_ll_register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/fragment_store_information_tv_region"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+            <TextView
+                android:id="@+id/fragment_store_information_tv_region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/fragment_login_ll_register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/fragment_store_information_tv_minimum_charge"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+            <TextView
+                android:id="@+id/fragment_store_information_tv_minimum_charge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/fragment_login_ll_register" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/fragment_store_information_tv_delivery_fee"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+            <TextView
+                android:id="@+id/fragment_store_information_tv_delivery_fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/item_custom_restaurant_item_tv_price" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/fragment_display_restaurants_ll_spinners"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_spinner_bg"
+                android:layout_marginEnd="@dimen/_5sdp"
+                >
+
+                <ImageView
+                    android:id="@+id/fragment_display_restaurants_sp_img_city"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_down_arrow_pink_icon" />
+
+                <Spinner
+                    android:id="@+id/fragment_display_restaurants_sp_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_2sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_spinner_bg"
+                android:layout_marginStart="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/fragment_display_restaurants_sp_img_restaurant"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:src="@drawable/ic_search_pink_icon" />
+
+                <EditText
+                    android:id="@+id/fragment_display_restaurants_et_restaurant"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/_25sdp"
+                    android:paddingEnd="@dimen/_2sdp"
+                    android:background="@null"
+                    android:hint="@string/fragment_display_restaurants_et_hint_search"
+                    android:textSize="@dimen/_8ssp"
+                    android:textColor="@color/fragment_forgot_password_et_hint" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_display_restaurants_rv_restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_display_restaurants_ll_spinners"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp" />
+
+    </RelativeLayout>
+</layout>

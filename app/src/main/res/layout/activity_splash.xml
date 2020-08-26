@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.SplashActivity">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_splash_bg">
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/img_splash_img_1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_minus55sdp"
+            android:layout_marginTop="@dimen/_minus53sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/img_splash_logo"
+                android:layout_marginBottom="@dimen/_15sdp" />
+
+            <Button
+                android:id="@+id/activity_splash_btn_order"
+                android:text="@string/splash_btn1_order"
+                android:layout_marginBottom="@dimen/_15sdp"
+                style="@style/activity_splash_btn" />
+
+            <Button
+                android:id="@+id/activity_splash_btn_sale"
+                android:text="@string/splash_btn2_sale"
+                style="@style/activity_splash_btn" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/img_splash_img_2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-85dp"
+            android:layout_marginBottom="-95dp" />
+
+
+    </RelativeLayout>
+</layout>

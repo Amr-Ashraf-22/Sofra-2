@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layer__display_restaurants_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_minus50sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/item_custom_restaurants_img_v_logo">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/item_custom_restaurants_rl_container"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/item_custom_restaurants_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="dsvdv"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/item_custom_restaurants_img_v_hours"
+                    android:layout_width="@dimen/_9sdp"
+                    android:layout_height="@dimen/_9sdp"
+                    android:layout_toStartOf="@+id/item_custom_restaurants_tv_hours"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                     />
+
+                <TextView
+                    android:id="@+id/item_custom_restaurants_tv_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fragment_forgot_password_et_hint"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:text="open"
+                    android:textSize="@dimen/_10ssp" />
+
+            </RelativeLayout>
+
+            <RatingBar
+                android:id="@+id/item_custom_restaurants_rb_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_custom_restaurants_rl_container"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_alignParentStart="true"
+                style="@style/custom_rating_bar"
+                />
+
+            <TextView
+                android:id="@+id/item_custom_restaurants_tv_minimum_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_custom_restaurants_rb_rating"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/fragment_forgot_password_et_hint" />
+
+            <TextView
+                android:id="@+id/item_custom_restaurants_tv_delivery_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/fragment_forgot_password_et_hint"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_below="@+id/item_custom_restaurants_tv_minimum_order"
+                android:layout_marginBottom="@dimen/_10sdp" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_custom_restaurants_img_v_logo"
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_95sdp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_15sdp" />
+
+    </RelativeLayout>
+</layout>

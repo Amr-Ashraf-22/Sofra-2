@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_155sdp">
+
+            <ImageView
+                android:id="@+id/item_custom_restaurant_item_img_v_food"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/item_custom_restaurant_item_cv_texts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_minus30sdp"
+                android:layout_below="@+id/item_custom_restaurant_item_img_v_food">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/item_custom_restaurant_item_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/pink"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_custom_restaurant_item_tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/fragment_forgot_password_et_hint"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_custom_restaurant_item_tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/item_custom_restaurant_item_tv_price"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
